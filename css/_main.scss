@@ -1,0 +1,376 @@
+//---------------------------------------- style général 
+
+body {
+    font-family: 'titillium', sans-serif;
+    background-color: #f3f3f3;
+}
+
+section {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+hr {
+    width: 5rem;
+    height: 0.3125rem;
+}
+
+a{
+    color: #1675c6;
+}
+
+ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: "inherit";
+}
+//--------------------------------------- Header 
+
+.navbar-responsive {
+    background-color: #e0e8f6;
+
+    ul {
+        text-align: center;
+
+        li {
+            height: 4rem;
+            @include font(1.125rem, 300, 4rem, #1675c6);
+            border-bottom: .5px solid #80551b;
+
+             a {
+                 color: inherit;
+            }
+        }
+    }
+} 
+
+header {
+    width: 100%;
+    height: 40.625rem;
+    background-image: url('../img/background/image-header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .logonavbar {
+     border-bottom: 1px solid #80551b;
+       .logo {
+           img {
+              width: 60%;
+           }
+       }
+       .navbar {
+           ul {
+               float: right;
+
+               li {
+                   float: left;
+                    @include font(1.125rem, 300, 2.5rem, #80551b);
+
+                    + li {
+                        margin-left: 3rem;
+                    }
+
+                    a {
+                        color: inherent;
+
+                        &.hvr-underline-from-left::before {
+                            background: #80551b;
+                        }
+                    }
+               }
+           }
+
+           img.menu {
+               width: 2.5rem;
+           }
+       }
+ }
+       h1.catchphrase {
+             @include font(3.125rem, 400, 3.125rem, #80551b);
+             text-transform: uppercase;
+             text-align: center;
+             margin-top: 9rem;
+
+             span {
+                 font-weight: 600;
+                color: #456fe6;
+             }
+       }
+
+    /*   a.btn {
+           display: block;
+           width: 20%;
+           border-radius: 1rem;
+           background-color: #b88d6d;
+           text-align: center;
+           margin: auto;
+       }*/
+       
+       a.down-arrow {
+           display: block;
+           width: 4.125rem;
+           margin: auto;
+
+           img {
+               width: 100%;
+               margin-top: 6.875rem;
+               animation: arrow 1s ease-in-out infinite alternate;
+           }
+       }
+
+       @keyframes arrow {
+           from {
+               opacity: 1;
+               margin-top: 0;
+           }
+
+           to {
+               opacity: .2;
+               margin-top:2rem;
+           }
+       }
+
+
+//--------------------------------------- A propos 
+
+.about {
+    h2{
+         @include font(2rem, 600, 4rem, #80551b);
+         text-transform: uppercase;
+         text-align: center;
+    } 
+    h3{
+         @include font(1.5625rem, 400, 1.5625rem, #282828);
+         margin-bottom: 2rem;
+    }
+    p{
+         @include font(1.25rem, 300, 1.875rem, #282828);
+         margin-bottom: 2rem;
+    }
+    ul{
+        list-style: disc;
+         @include font(1.25rem, 400, 1.85rem, #282828);
+         margin-bottom: 2rem;
+         list-style-position: inside;
+    }
+    a{
+        color: #456fe6;
+    }
+
+img.picture {
+    float: right;
+}
+
+.social-networks {
+    text-align: center;
+    
+    a {
+        + a{
+            margin-left: .3125rem;
+        }
+        img{
+            width: 2.1875rem
+        }
+    }
+}
+}
+
+//------------------------------------ mes compétences
+
+.skill {
+    background-color: #b88d6d;
+
+    h2{
+         @include font(2rem, 600, 4rem, #d7e1ff);
+         text-transform: uppercase;
+         text-align: center;
+    } 
+
+    p {
+        @include font(1.25rem, 400, 1.25rem, #d7e1ff);
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        margin-top: 1.5625rem;
+
+        .percent{
+            @include font(4.25rem, 700, 6.25rem, #d7e1ff);
+        }
+
+        .progress-container {
+            flex-basis: 100%;
+            padding-left: 2rem;
+
+            strong{
+                @include font(1.25rem, 600, 1.25rem, #d7e1ff);
+            }
+
+            .progress {
+                margin-top: 1rem;
+                border-radius:0;
+                background-color: #cfab91;
+
+                .progress-bar {
+                    height: 1.5rem;
+                    background-color: #6a7db3;
+                }
+            }
+        }
+    }
+}
+
+//--------------------------------------mes formations
+
+.formation {
+    h2 {
+        @include font(2rem, 600, 4rem, #b88d6d);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    article {
+        position: relative;
+        margin-top: 4.375rem;
+        background-color: #eddccf;
+        padding: 1.25rem 2.1875rem 3.4375rem;
+
+        .period {
+            position: absolute;
+            height: 4.375rem;
+            background: #a76700;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            top: -1.125rem;
+            left: -.875rem;
+            @include font(1.5625rem, 600, 4.375rem, #d7e1ff);
+        }
+
+        h3,h4 {
+            text-align: right;
+            padding-top: 2.1rem;
+        }
+
+        h3 {
+             @include font(1.5625rem, 600, 1.5625rem, #4e6093);
+        }
+
+        h4{
+           @include font(0.9375rem, 400, 0.9375rem, #4e6093);
+           margin-bottom: 2.8125rem;
+        }
+
+        p {
+            @include font(1.125rem, 300, 1.125rem, #282828);
+            text-align: justify;
+        }
+    }
+}
+
+//--------------------------------------- mes réalisations
+
+.realisation {
+    background-color: #cfab91;
+
+    h2 {
+        @include font(2rem, 600, 4rem, #d7e1ff);
+        text-align: center;
+    }
+
+    p {
+        @include font(1.5625rem, 400, 1.5625rem, #d7e1ff);
+        text-align: center;
+        margin-bottom: 5.25rem;
+    }
+
+    figure {
+        position: relative;
+        margin-bottom:0;
+        margin-top: 1rem;
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            position: absolute;
+            top: .5rem;
+            right: .5rem;
+            left: .5rem;
+            bottom: .5rem;
+            background-color: #eddccf;
+            opacity:0;
+            padding-top: 3.9375rem;
+            transition:opacity .6s ease;
+
+            &:hover{
+                opacity: .9;
+            }
+
+            h3,
+            h4 {
+                text-align: center;
+            }
+
+            h3 {
+                @include font(1.25rem, 700, 1.25rem, #282828);
+                margin-bottom: 1rem;  
+            }
+
+            h4 {
+                @include font(.875rem, 400, .875rem, #282828);
+                margin-bottom: 2rem; 
+            }
+
+            a {
+                display: block;
+                width:1.625rem;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.background {
+     background-image: url('../img/background/lyon-paris.png');
+     width: 100%;
+     height: 30.625rem;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-top:0rem;
+}
+
+
+//---------------------------------------- Footer
+
+footer {
+    background-color: #6b7db3;
+    p {
+       @include font(1rem, 400, 1rem, #d7e1ff); 
+       text-align: center;
+       margin-bottom: 0;
+       padding: 1rem 0;
+    }
+}
+a.up-arrow {
+     display: block;
+     width: 4.125rem;
+     margin: auto;
+
+    img {
+        width: 100%;
+        }
+}
