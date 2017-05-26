@@ -241,11 +241,17 @@ img.picture {
         text-transform: uppercase;
     }
 
+     
+        .last {
+            margin: auto;
+        }
+
     article {
         position: relative;
         margin-top: 4.375rem;
         background-color: #eddccf;
         padding: 1.25rem 2.1875rem 3.4375rem;
+       
 
         .period {
             position: absolute;
@@ -258,9 +264,10 @@ img.picture {
             @include font(1.5625rem, 600, 4.375rem, #d7e1ff);
         }
 
+        
         h3,h4 {
             text-align: right;
-            padding-top: 2.1rem;
+            padding-top: 1.1rem;
         }
 
         h3 {
@@ -268,7 +275,7 @@ img.picture {
         }
 
         h4{
-           @include font(0.9375rem, 400, 0.9375rem, #4e6093);
+           @include font(1.3rem, 400, 0.9375rem, #4e6093);
            margin-bottom: 2.8125rem;
         }
 
@@ -284,6 +291,10 @@ img.picture {
 .realisation {
     background-color: #cfab91;
 
+    .web {
+        margin-bottom: 2rem;
+    }
+
     h2 {
         @include font(2rem, 600, 4rem, #d7e1ff);
         text-align: center;
@@ -292,7 +303,7 @@ img.picture {
     p {
         @include font(1.5625rem, 400, 1.5625rem, #d7e1ff);
         text-align: center;
-        margin-bottom: 5.25rem;
+        margin-bottom: 3.25rem;
     }
 
     figure {
