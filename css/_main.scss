@@ -1,5 +1,8 @@
+/* 
 
 
+
+*/
 
 //---------------------------------------- style général 
 
@@ -19,7 +22,7 @@ hr {
 }
 
 a {
-    color: #1675c6;
+    color: #46557c;
 }
 
 ul {
@@ -34,6 +37,8 @@ a:active {
     text-decoration: none;
     color: "inherit";
 }
+
+
 //--------------------------------------- Header 
 
 .navbar-responsive {
@@ -105,18 +110,10 @@ header {
 
              span {
                  font-weight: 600;
-                color: #456fe6;
+                color: #46557c;
              }
        }
 
-    /*   a.btn {
-           display: block;
-           width: 20%;
-           border-radius: 1rem;
-           background-color: #b88d6d;
-           text-align: center;
-           margin: auto;
-       }*/
        
        a.down-arrow {
            display: block;
@@ -190,7 +187,7 @@ img.picture {
 //------------------------------------ mes compétences
 
 .skill {
-    background-color: #b88d6d;
+    background-color: #8c4414;
 
     h2{
          @include font(2rem, 600, 4rem, #d7e1ff);
@@ -228,7 +225,7 @@ img.picture {
 
                 .progress-bar {
                     height: 1.5rem;
-                    background-color: #6a7db3;
+                    background-color: #28395e;
                 }
             }
         }
@@ -239,7 +236,7 @@ img.picture {
 
 .formation {
     h2 {
-        @include font(2rem, 600, 4rem, #b88d6d);
+        @include font(2rem, 600, 4rem, #80551b);
         text-align: center;
         text-transform: uppercase;
     }
@@ -292,7 +289,8 @@ img.picture {
 //--------------------------------------- mes réalisations
 
 .realisation {
-    background-color: #cfab91;
+    background-color: #e59055;
+    
 
     .web {
         margin-bottom: 2rem;
@@ -301,6 +299,7 @@ img.picture {
     h2 {
         @include font(2rem, 600, 4rem, #d7e1ff);
         text-align: center;
+        text-transform: uppercase;
     }
 
     p {
@@ -371,7 +370,7 @@ img.picture {
 //---------------------------------------- Footer
 
 footer {
-    background-color: #6b7db3;
+    background-color: #46557c;
     p {
        @include font(1rem, 400, 1rem, #d7e1ff); 
        text-align: center;
