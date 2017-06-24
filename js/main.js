@@ -1,11 +1,14 @@
 $(function() {
+
     var words = [
         'créatif',
         'autodidacte',
         'enthousiaste',
         'curieux'
     ];
+
     i=0;
+
         // on gere l'affichage du menu responsive pour les écrans inférieur ou égaux a médium <992px 
     $(".navbar-responsive").toggle();
 
